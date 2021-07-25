@@ -1,0 +1,33 @@
+<html>
+<body>
+
+<p id="show"></p>
+
+<script>
+
+function Student(first, last, grade, group) {
+  this.firstName = first;
+  this.lastName = last;
+  this.gradeStudying = grade;
+  this.groupTaken = group;
+}
+
+
+const student1= new Student("Ahmed", "Raza", 10, "science");
+
+const student2 = new Student("Aamir", "Saleem", 11, "commerce");
+
+const student3 = new Student("Haseeb", "Rauf", 10, "commerce");
+
+const student4 = new Student("Aftab", "Ahmed", 11, "science");
+
+
+document.getElementById("show").innerHTML =
+"First Name of Student1 :: " + student1.firstName + "<br/>" +
+"First Name of Student2 :: " + student2.firstName + "<br/>" +
+"First Name of Student3 :: " + student3.firstName + "<br/>" +
+"First Name of Student4 :: " + student4.firstName + ".";
+</script>
+
+</body>
+</html>

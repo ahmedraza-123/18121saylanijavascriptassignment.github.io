@@ -1,0 +1,41 @@
+
+
+<html>
+
+<head>
+
+
+
+</head>
+
+<body>
+
+
+
+
+</body>
+
+<script>
+var itemsArray =
+ [
+{name:"juice",price:"50",quantity:"3"},
+
+{name:"cookie",price:"30",quantity:"6"},
+
+{name:"pen",price:"850",quantity:"4"},
+
+{name:"shirt",price:"100",quantity:"2"},
+];
+
+var total = 0;
+for(var i = 0; i < itemsArray.length; i++)
+{
+itemsArray[i].total = itemsArray[i].price * itemsArray[i].quantity;
+total += itemsArray[i].total;
+alert(itemsArray[i].name + ": " + itemsArray[i].total);
+}
+
+alert("Total: " + total);
+
+</script>
+</html>
